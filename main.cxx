@@ -1,8 +1,8 @@
-// Ludovico Mattavelli 1193955    Esame del 01/06/2022
+// *  Ludovico Mattavelli 1193955    Esame del 01/06/2022
 
-// Programma per il calcolo delle energie e degli autostati di una particella in una buca di potenziale infinita con un gradino di potenziale posto all'interno
+// * Programma per il calcolo delle energie e degli autostati di una particella in una buca di potenziale infinita con un gradino di potenziale posto all'interno
 
-
+// ** put this inside the file of the introduction
 #include <iostream>
 #include <cmath>
 #include <fstream>
@@ -11,8 +11,8 @@
 
 using namespace std;
 
-//definzioni delle costanti 
-//costanti generali
+//definition of the variable
+//const variables general
 const int    I_case=1;                  // 0= funzione quadratica, 1=buca di potenziale con sin
 const int    N_stati=3;                 // numero di autostati da calcolare
 const int    Nh=15;                     // numero di parametri
@@ -30,7 +30,7 @@ const double hx=(x_max-x_min)/(Nx-1.);  // spaziatura tra i pti x
 const double h_der=0.001;               // variazione per la derivata
 
 // Soglie di tolleranza
-const double toll1=0.0000001;              // tolleranza per ricerca di minimo lungo u
+const double toll1=0.0000001;              // tolleranza per ricerca di minimo lungo u * why? 
 const double toll2=0.00000001;             // tolleranza per ricerca di minimo nel gradiente coniugato
 
 // Incremento nel minimo lungo u
@@ -39,8 +39,8 @@ const double LL=0.01;
 
 // Funzioni utilizzate
 double  V(double);										//Potenziale a gradino
-double  Norm(double f[Nx]);									//Normaalizzazione degli autostati
-double  Modulo_v(double h[Nh]);								//Modulo di un vettore
+double  Norm(double f[Nx]);									//Normalizzazione degli autostati
+double  Modulo_v(double h[Nh]);									//Modulo di un vettore
 double  Energia(double B_h[Nh],int n_stato, double PSI[N_stati][Nx], double x[Nx]);			//Calcolo dell'energia
 double  DerivParziale(double B_h[Nh], int r, int n_stato, double PSI[N_stati][Nx],double x[Nx]); 	//DerivataParziale
 
