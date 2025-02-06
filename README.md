@@ -1,4 +1,4 @@
-# README - Programma per il Calcolo delle Energie e degli Autostati in una Buca di Potenziale
+# Programma per il Calcolo delle Energie e degli Autostati in una Buca di Potenziale
 
 ## Introduzione Teorica
 Questo programma calcola le energie e gli autostati di una particella in una buca di potenziale infinita con un gradino di potenziale interno. Il problema viene risolto utilizzando il metodo del gradiente coniugato per trovare i parametri ottimali delle autofunzioni.
